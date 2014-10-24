@@ -2,6 +2,7 @@
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
+using Theraot.Core;
 
 namespace HashSmash
 {
@@ -40,7 +41,7 @@ namespace HashSmash
             {
                 var directoryPath = args[0];
                 var resultFilePath = "results.txt";
-                if (args.Length > 1 && !string.IsNullOrWhiteSpace(args[1]))
+                if (args.Length > 1 && !StringHelper.IsNullOrWhiteSpace(args[1]))
                 {
                     resultFilePath = args[1];
                 }
@@ -68,7 +69,7 @@ namespace HashSmash
         {
             using (var resultsFile = new StreamWriter(File.OpenWrite(resultFile)))
             {
-                foreach (var file in Directory.GetFiles(directoryPath, "*", SearchOption.AllDirectories))
+                foreach (var file in Theraot.Core.FolderEnumeration.GetFilesRecursive(directoryPath, "*"))
                 {
                     try
                     {

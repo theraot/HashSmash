@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("HashSmash")]
-[assembly: AssemblyDescription("Computes the md5 hash of all files on a directory - requires .NET 4.0")]
+[assembly: AssemblyDescription("Computes the md5 hash of all files on a directory")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Alfonso J. Ramos")]
 [assembly: AssemblyProduct("HashSmash")]
