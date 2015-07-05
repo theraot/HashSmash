@@ -38,8 +38,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="Theraot.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b1460dff8a28f7a7, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Theraot\Theraot.Core.dll</HintPath>
+      <HintPath>..\packages\Theraot.Core.1.0.2-pre20150627\lib\NET20\Theraot.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
